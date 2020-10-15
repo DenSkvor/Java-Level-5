@@ -11,6 +11,8 @@ import javafx.stage.WindowEvent;
 
 public class Main extends Application {
 
+    //TODO индикатор (лейбл) подключения он/офф, возможность переименовывать файлы
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/main.fxml"));
@@ -24,6 +26,7 @@ public class Main extends Application {
                 Net.getInstance().exit();
             }
         });
+
     }
 
 
